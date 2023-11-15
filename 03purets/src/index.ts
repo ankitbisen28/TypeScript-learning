@@ -9,7 +9,7 @@
 // }
 
 class User {
-  private _courseCount = 1;
+  protected _courseCount = 1;
 
   readonly city: string = "";
   constructor(public email: string, public name: string) {
@@ -36,3 +36,10 @@ const Ankit = new User("ankitbisen@mail.com", "Ankit");
 // Ankit.city = 1;
 
 // Ankit.deleteToken()
+
+class SubUser extends User {
+  isFamily: boolean = true;
+  changeCourseCount() {
+    this._courseCount = 4;
+  }
+}
