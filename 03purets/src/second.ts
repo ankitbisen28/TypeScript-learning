@@ -16,15 +16,15 @@ interface Story {
 //   ) {}
 // }
 
-class Youtube implements TakePhoto, Story {
-  constructor(
-    public cameraMode: string,
-    public filter: string,
-    public brust: number,
-    public short: string
-  ) {}
+// class Youtube implements TakePhoto, Story {
+//   constructor(
+//     public cameraMode: string,
+//     public filter: string,
+//     public brust: number,
+//     public short: string
+//   ) {}
 
-  createStory(): void {
-    console.log("create story");
-  }
-}
+//   createStory(): void {
+//     console.log("create story");
+//   }
+// }
